@@ -27,7 +27,7 @@ This is a basic application for the backend. The .env file with the secret key i
     
 ## Link
 
-[Download the file as zip](https://drive.google.com/file/d/1o9TdB5KIvjCwgjkx5TW5JUTMftxdvaS9/view?usp=sharing)
+[Download the project as a zip](https://drive.google.com/file/d/1o9TdB5KIvjCwgjkx5TW5JUTMftxdvaS9/view?usp=sharing)
 
 ## Installation
 
