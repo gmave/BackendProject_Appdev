@@ -1,6 +1,6 @@
 # Backend Project for App Dev class
 
-This is a basic application for the backend.
+This is a basic application for the backend. The .env file with the secret key is exposed mostly for demonstration/educuation purposes only. 
 
 
 ## Table of Contents
