@@ -1,6 +1,7 @@
 const jwt = require("jsonwebtoken");
 const userModel = require('../models/userModel');
-const SECRET_KEY = 'your_secret_key';
+const { SECRET_KEY } = require('../config'); 
+
 exports.loginUser = (req, res) => {
     const { username, password } = req.body;
     

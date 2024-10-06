@@ -1,5 +1,6 @@
+const { SECRET_KEY } = require('../config'); 
 const jwt = require ('jsonwebtoken');
-const SECRET_KEY = 'your_secret_key';
+
 
 exports.verifyToken = (req, res, next) => {
     const token = req.headers['authorization'];
