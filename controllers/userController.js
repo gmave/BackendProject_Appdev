@@ -17,21 +17,5 @@ exports.registerUser = (req, res) => {
 };
 
 
-exports.loginUser = (req, res) => {
-    const { username, password } = req.body;
-    const user = userModel.authenticateUser(username, password);
-    if (!user) {
-        return res.status(401).json({ message: 'Invalid username or password' });
-    }
-    res.status(200).json({ message: 'Login successful', user });
-};
 
-// Profile update 
-/*exports.updateUserProfile = (req, res) => {
-    const { username, profile } = req.body;
-    const result = userModel.updateProfile(username, profile);
-    if (result.error) {
-        return res.status(404).json({ message: result.error });
-    }
-    res.status(200).json({ message: 'Profile updated successfully' });
-};*/
+

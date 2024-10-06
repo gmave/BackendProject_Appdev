@@ -12,6 +12,7 @@ const saveUsers = (users) => {
     fs.writeFileSync(path, JSON.stringify(users, null, 2));
 };
 
+exports.loadUsers = loadUsers; 
 
 exports.createUser = (username, password) => {
     let users = loadUsers();
@@ -36,14 +37,3 @@ exports.authenticateUser = (username, password) => {
     return users.find(user => user.username === username && user.password === password);
 };
 
-/*
-exports.updateProfile = (username, profileData) => {
-    let users = loadUsers();
-    const userIndex = users.findIndex(user => user.username === username);
-    if (userIndex === -1) {
-        return { error: 'User not found' };
-    }
-    users[userIndex].profile = profileData;
-    saveUsers(users);
-    return users[userIndex];
-};*/
